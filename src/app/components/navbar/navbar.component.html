@@ -1,0 +1,32 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" [ngbCollapse]="!isCollapsed">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/home" routerLinkActive="active" (click)="isCollapsed = false" [attr.aria-expanded]="!isCollapsed">Home
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/about" routerLinkActive="active" (click)="isCollapsed = false" [attr.aria-expanded]="!isCollapsed">About</a>
+      </li>
+      <li class="nav-item dropdown" ngbDropdown routerLinkActive="active">
+        <a class="nav-link" ngbDropdownToggle>Dropdown link</a>
+        <div class="dropdown-menu" ngbDropdownMenu>
+          <a class="dropdown-item" routerLink="dropdown/link1" routerLinkActive="active" (click)="isCollapsed = false" [attr.aria-expanded]="!isCollapsed">Link 01</a>
+          <a class="dropdown-item" routerLink="dropdown/link2" routerLinkActive="active" (click)="isCollapsed = false" [attr.aria-expanded]="!isCollapsed">Link 02</a>
+          <a class="dropdown-item" routerLink="dropdown/link3" routerLinkActive="active" (click)="isCollapsed = false" [attr.aria-expanded]="!isCollapsed">Link 03</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/contact" routerLinkActive="active" (click)="isCollapsed = false" [attr.aria-expanded]="!isCollapsed">Contact</a>
+      </li>
+    </ul>
+  </div>
+
+</nav>

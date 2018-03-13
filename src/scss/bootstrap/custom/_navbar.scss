@@ -1,0 +1,9 @@
+.nav-item {
+    &.dropdown {
+        .nav-link {
+            &.dropdown-toggle {
+                cursor: pointer;
+            }
+        }
+    }
+}
