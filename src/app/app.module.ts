@@ -12,6 +12,7 @@ import { ContactPageComponent } from './components/contact-page/contact-page.com
 import { DropdownLink1Component } from './components/dropdown-link1/dropdown-link1.component';
 import { DropdownLink2Component } from './components/dropdown-link2/dropdown-link2.component';
 import { DropdownLink3Component } from './components/dropdown-link3/dropdown-link3.component';
+import { StickyFooterComponent } from './components/sticky-footer/sticky-footer.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { DropdownLink3Component } from './components/dropdown-link3/dropdown-lin
     ContactPageComponent,
     DropdownLink1Component,
     DropdownLink2Component,
-    DropdownLink3Component
+    DropdownLink3Component,
+    StickyFooterComponent
   ],
   imports: [
     BrowserModule,

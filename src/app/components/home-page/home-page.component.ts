@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'home-page',
+  selector: 'app-home-page',
   templateUrl: './home-page.component.html',
   styleUrls: ['./home-page.component.scss']
 })
 export class HomePageComponent implements OnInit {
-  title = "Angular CLI Template";
-  
+  title = 'Cordova & Angular CLI Template';
+
   constructor() { }
 
   ngOnInit() {
