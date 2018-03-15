@@ -11,7 +11,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "android": "(npm run ng build && cordova run android) || (npm run ng build & cordova run android)"
+    "android": "(ng build && cordova run android) || (ng build & cordova run android)"
   },
   "author": "Scott Guthrie",
   "license": "MIT",
