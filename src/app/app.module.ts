@@ -13,6 +13,7 @@ import { DropdownLink1Component } from './components/dropdown-link1/dropdown-lin
 import { DropdownLink2Component } from './components/dropdown-link2/dropdown-link2.component';
 import { DropdownLink3Component } from './components/dropdown-link3/dropdown-link3.component';
 import { StickyFooterComponent } from './components/sticky-footer/sticky-footer.component';
+import { DeviceInfoComponent } from './components/device-info/device-info.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { StickyFooterComponent } from './components/sticky-footer/sticky-footer.
     DropdownLink1Component,
     DropdownLink2Component,
     DropdownLink3Component,
-    StickyFooterComponent
+    StickyFooterComponent,
+    DeviceInfoComponent
   ],
   imports: [
     BrowserModule,
