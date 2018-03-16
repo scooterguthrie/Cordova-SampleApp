@@ -10,9 +10,10 @@ export class AppComponent implements OnInit {
   title = 'app';
 
   ngOnInit() {
-    document.addEventListener('deviceready', function () {
-      alert(device.platform);
-    }, false);
+    document.addEventListener('deviceready', onDeviceReady, false);
+    function onDeviceReady() {
+      console.log(device.model);
+    }
   }
 
 }

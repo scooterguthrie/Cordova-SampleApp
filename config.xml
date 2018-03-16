@@ -39,6 +39,12 @@
         <splash density="port-xhdpi" src="res/screen/android/splash-port-xxhdpi.png" />
         <splash density="port-xhdpi" src="res/screen/android/splash-port-xxxhdpi.png" />
     </platform>
+    <platform name="browser">
+        <preference name="SplashScreen" value="res/icon/browser/icon.png" />
+        <preference name="SplashScreenBackgroundColor" value="#e9ecef" />
+        <preference name="SplashScreenWidth" value="192" />
+        <preference name="SplashScreenHeight" value="192" />
+    </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
@@ -70,8 +76,8 @@
         <splash height="2208" src="res/screen/ios/Default-736h.png" width="1242" />
         <splash height="1242" src="res/screen/ios/Default-Landscape-736h.png" width="2208" />
     </platform>
+    <plugin name="cordova-plugin-statusbar" spec="^2.4.1" />
     <engine name="browser" spec="^5.0.3" />
     <engine name="android" spec="^7.0.0" />
     <engine name="ios" spec="^4.5.4" />
-    <plugin name="cordova-plugin-statusbar" spec="^2.4.1" />
 </widget>
