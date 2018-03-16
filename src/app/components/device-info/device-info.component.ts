@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+declare var device;
 
 @Component({
   selector: 'app-device-info',
@@ -7,6 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class DeviceInfoComponent implements OnInit {
+  cordovaVersion = device.cordova;
+  deviceModel = device.model;
+  devicePlatform = device.platform;
+  deviceUuid = device.uuid;
+  deviceVersion = device.version;
+  deviceManufacturer = device.manufacturer;
+  deviceIsVirtual = device.isVirtual;
+  deviceSerial = device.serial;
 
   constructor() { }
 
