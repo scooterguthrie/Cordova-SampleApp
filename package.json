@@ -11,9 +11,9 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "browser": "(ng build && cordova run browser) || (ng build & cordova run browser)",
-    "android": "(ng build && cordova run android) || (ng build & cordova run android)",
-    "ios": "(ng build && cordova run ios --target=\"iPhone-6\") || (ng build & cordova run ios --target=\"iPhone-6\")"
+    "browser": "(ng build --prod && cordova run browser) || (ng build --prod & cordova run browser)",
+    "android": "(ng build --prod && cordova run android) || (ng build --prod & cordova run android)",
+    "ios": "(ng build --prod && cordova run ios --target=\"iPhone-6s\") || (ng build --prod & cordova run ios --target=\"iPhone-6s\")"
   },
   "author": "Scott Guthrie",
   "license": "MIT",
