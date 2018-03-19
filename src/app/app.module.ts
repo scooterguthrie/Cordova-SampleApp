@@ -14,6 +14,7 @@ import { DropdownLink2Component } from './components/dropdown-link2/dropdown-lin
 import { DropdownLink3Component } from './components/dropdown-link3/dropdown-link3.component';
 import { StickyFooterComponent } from './components/sticky-footer/sticky-footer.component';
 import { DeviceInfoComponent } from './components/device-info/device-info.component';
+import { BatteryStatusComponent } from './components/battery-status/battery-status.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { DeviceInfoComponent } from './components/device-info/device-info.compon
     DropdownLink2Component,
     DropdownLink3Component,
     StickyFooterComponent,
-    DeviceInfoComponent
+    DeviceInfoComponent,
+    BatteryStatusComponent
   ],
   imports: [
     BrowserModule,
